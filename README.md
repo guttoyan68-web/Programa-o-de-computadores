@@ -1,4 +1,5 @@
 Sistema de Controle de Notas e Frequência
+
 Descrição
 
 Este projeto foi desenvolvido em Python com o objetivo de realizar o cadastro de alunos, registrar notas e frequência, calcular médias e informar se o aluno foi aprovado ou reprovado de acordo com critérios pré-definidos.
