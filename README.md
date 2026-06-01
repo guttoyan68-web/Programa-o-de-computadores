@@ -1,1 +1,82 @@
-Sistema de Gerenciamento de Notas e Frequência escolarEste é um script em Python desenvolvido para coletar dados acadêmicos de alunos, calcular suas médias, verificar a assiduidade e gerar um relatório final com a situação de cada um (Aprovado ou Reprovado).O programa foi estruturado utilizando funções para garantir a modularidade e loops de validação para evitar a entrada de dados incorretos.🚀 FuncionalidadesValidação de Dados: O sistema garante que notas inválidas (menores que 0 ou maiores que 10) e frequências incorretas (fora do intervalo de 0 a 100%) não sejam aceitas.Cálculo Automático: Calcula a média aritmética das duas notas inseridas.Análise de Situação: Avalia os critérios de aprovação e detalha os motivos em caso de reprovação (nota baixa, frequência baixa ou ambos).Interrupção Voluntária: Permite ao usuário encerrar o programa antes do limite de cadastros, exibindo o relatório parcial.Relatório Final: Exibe um resumo formatado com os dados de todos os alunos registrados ao término da execução.📋 Regras de NegócioPara que um aluno seja considerado APROVADO, ele deve cumprir os seguintes critérios simultaneamente:CritérioValor MínimoMédia das Notas7.0Frequência Escolar75%🛠️ Estrutura do CódigoO código está dividido nas seguintes funções e blocos principais:media(nota1, nota2): Retorna a média aritmética entre as duas notas.registrar_dados(): Realiza o input dos dados e valida os limites numéricos de notas e frequência.calculo_frequencia(freq): Verifica se a frequência atende o requisito mínimo.geracao_relatorio(lista_final): Varre a lista de dicionários acumulados e imprime o relatório formatado na tela.Loop Principal (for): Controla o fluxo de cadastro para até 3 alunos, faz as verificações em tempo real e pergunta se o usuário deseja encerrar o script antecipadamente.
+istema de Controle de Notas e Frequência
+Descrição
+
+Este projeto foi desenvolvido em Python com o objetivo de realizar o cadastro de alunos, registrar notas e frequência, calcular médias e informar se o aluno foi aprovado ou reprovado de acordo com critérios pré-definidos.
+
+O sistema permite cadastrar até 3 alunos, exibindo o resultado individual de cada um e, ao final, gerando um relatório completo com todos os registros.
+
+Funcionalidades
+Cadastro do nome do aluno;
+Cadastro da disciplina;
+Registro de duas notas;
+Registro da frequência do aluno;
+Cálculo automático da média;
+Verificação da frequência mínima exigida;
+Exibição da situação do aluno (Aprovado ou Reprovado);
+Geração de relatório final com todos os alunos cadastrados;
+Opção de encerrar o programa antes do limite de cadastros.
+Regras de Aprovação
+
+Para ser aprovado, o aluno deve:
+
+Obter média igual ou superior a 7,0;
+Possuir frequência igual ou superior a 75%.
+
+Caso não cumpra um desses requisitos, o aluno será considerado reprovado.
+
+Estrutura do Código
+Função media(nota1, nota2)
+
+Calcula a média aritmética das duas notas informadas.
+
+Função registrar_dados()
+
+Recebe os dados do aluno:
+
+Nome;
+Disciplina;
+Primeira nota;
+Segunda nota;
+Frequência.
+
+Também realiza validações para garantir que os valores estejam dentro dos limites permitidos.
+
+Função calculo_frequencia(freq)
+
+Verifica se a frequência do aluno atende ao mínimo exigido.
+
+Função geracao_relatorio(lista_final)
+
+Exibe um relatório contendo:
+
+Nome do aluno;
+Disciplina;
+Média;
+Frequência;
+Situação final.
+Tecnologias Utilizadas
+Python 3
+Exemplo de Saída
+
+RESULTADO DO JOÃO
+
+Disciplina: MATEMÁTICA
+
+Média: 8.5
+
+Frequência: 90
+
+SITUAÇÃO: APROVADO
+
+Objetivo Educacional
+
+Este projeto foi desenvolvido para praticar conceitos fundamentais de programação em Python, incluindo:
+
+Funções;
+Estruturas de repetição (while e for);
+Estruturas condicionais (if/else);
+Listas;
+Dicionários;
+Entrada e saída de dados;
+Validação de informações;
+Organização modular do código.
